@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vertical Div Layout</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-   
+    
     body {
       display: flex;
       justify-content: center;
@@ -15,24 +17,28 @@
       background-color: #f0f0f0;
     }
 
-    
+  
     .main-div {
-      width: 300px; 
-      height: 500px; 
+      width: 300px;
+      height: 500px;
       background-color: white;
       display: flex;
       flex-direction: column;
       border: 2px solid #ccc;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      box-sizing: border-box;
     }
 
-    
+
     .top-div {
+      position: relative;
       height: 60%;
-      background-color: rgb(237, 30, 78); 
-      border-bottom-left-radius: 30px; 
+      background-color: rgb(242, 14, 113);
+      border-bottom-left-radius: 30px;
       color: white;
       padding: 15px;
+      padding-right: 80px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -47,16 +53,16 @@
 
     .subtitle {
       font-size: 14px;
-      font-weight: 300; 
+      font-weight: 300;
       margin-top: -5px;
     }
 
-   
+    
     .stats {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 10px; 
+      gap: 10px;
       margin-top: 10px;
     }
 
@@ -76,76 +82,76 @@
       font-weight: bold;
     }
 
+    
     .warrior-image {
       position: absolute;
       top: 10px;
       right: 10px;
       width: 60px;
       height: auto;
-      border-radius: 8px; 
+      border-radius: 8px;
     }
 
-
-    
     .bottom-div {
       height: 40%;
       background-color: white;
       display: flex;
       flex-direction: column;
-      justify-content: space-around; 
+      justify-content: space-around;
       padding: 10px;
       gap: 10px;
       box-sizing: border-box;
     }
 
-   
-    .bottom-div {
-      height: 40%;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; 
-      padding: 10px;
-      gap: 10px; 
-      box-sizing: border-box;
-    }
-
+    
     .bottom-1, .bottom-2 {
-      background-color: #f5f5f5; 
+      background-color: #f5f5f5;
       flex: 1;
-      border-radius: 15px; 
+      border-radius: 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 15px; 
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     
     .number {
-      font-size: 36px; 
-      color: red; 
-      font-weight: bold; 
+      font-size: 36px;
+      color: red;
+      font-weight: bold;
       text-align: center;
     }
 
     .text {
-      font-size: 18px; 
-      color: red; 
-      text-align: center; 
+      font-size: 18px;
+      color: red;
+      text-align: center;
+    }
+
+    
+    .icon-circle {
+      font-size: 24px;
+      color: #ff4e50;
+      background-color: #ffffff;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
 
-  
+ 
   <div class="main-div">
     
     <div class="top-div">
-        <img src="C:\Users\DELL\OneDrive\Desktop\Sundown\anime-female.avif" alt="Anime Warrior" class="warrior-image">
+     
+      <img src="anime-image.jpg" alt="Anime Warrior" class="warrior-image">
 
-      
+    
       <div>
         <div class="title">Wraith</div>
         <div class="subtitle">Most Played Legend</div>
@@ -168,22 +174,29 @@
       </div>
     </div>
     
-    
+  
     <div class="bottom-div">
       
       <div class="bottom-1">
+        
+        <div class="icon-circle">
+          <i class="fas fa-trophy"></i>
+        </div>
         <div class="number">32</div>
         <div class="text">achievements</div>
       </div>
       
       
       <div class="bottom-2">
-        <div class="number">874</div>
-        <div class="text">Ranked Points</div>
+        
+        <div class="icon-circle">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="number">32</div>
+        <div class="text">achievements</div>
       </div>
     </div>
   </div>
 
 </body>
 </html>
- 
